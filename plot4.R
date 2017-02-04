@@ -14,7 +14,6 @@ png(filename = "Plot4.png",
 
 par(mfrow = c(2,2))
 
-#Plot 1 
 generatePlot2()
 generatePlot4TopRight()
 generatePlot3()

@@ -1,3 +1,30 @@
+
+## Instructions
+
+```{Author: D.Salas}
+```
+
+The purpose of this submission is to illustrate how to create basic plots for exploratory analysis.
+
+This submission is comprised in the following R scripts:
+
+1. readData.R: Script that reads the data from the txt file, subsets it and conditions it to meet the tidy data principles. This script is sourced by all the main generation Plot#.R scripts, in order to ensure the plots uses the same datasets. Note that for performance purposes, the read.table command make uses of fixed indices of the start and finish of the rows that are under the analysis.
+2. plottingSubRoutines.R: This script contains a set of functions where the logic plotting occurs. This functions will plot the grapsh on the current device. This allows reuse of the code for plotting which comes in handy for Plot #4, where the Plots 2 and 3, are included as part of the plot composite.
+3. Plot1.R: Using the data frame read in readData.R file, this script builds a histogram of "Global Active power" variable for the range of February 1st, to February 2nd 2007.
+The script saves this plot as Plot1.png file.
+4. Plot2.R: # Using the data frame read in readData.R file, this script builds a line graph of "Global Active power" variable  over time, for the range of February 1st, to February 2nd 2007.  Saves this plot as Plot2.png file
+5. Plot3.R: # Using the data frame read in readData.R file, this script builds a line graph of three series, for each Sub Metering variable (in watts/hour of active energy):
+* Sub metering 1 : Kitchen
+* Sub metering 2 : Laundry Room.
+* Sub metering 3 : Water Heater and air conditioner 
+
+6. Plot4.R: Creates a composite graph in a two by two matrix of: 
+* Graph 1 (Top Left): Line graph of Global active power over time.
+* Graph 2 (Top Right): Line graph of Voltage over time.
+* Graph 3 (Bottom Left): Line graph of the three Sub-metering variables.
+* Graph 4 (Bottom Right): Line graph of the global reactive power over time.
+
+
 ## Introduction
 
 This assignment uses data from
